@@ -1,0 +1,46 @@
+{
+  "name": "generacfdi",
+  "version": "1.2",
+  "description": "Facilita el consumo de servicios de timbrado de Real Virtual",
+  "author": "Realvirtual & Luis Arturo Arizmendi Fernandez",
+  "license": "MIT",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "require": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.js"
+  },
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "keywords": [
+    "CFDI 4.0",
+    "factura electronica",
+    "nomina",
+    "retenciones",
+    "facturacion",
+    "comprobante fiscal",
+    "timbrado",
+    "CFDI",
+    "realvirtual",
+    "SAT",
+    "stamping",
+    "api",
+    "typescript",
+    "commonjs",
+    "esmodules",
+    "axios",
+    "react",
+    "node",
+    "nodejs"
+  ],
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}

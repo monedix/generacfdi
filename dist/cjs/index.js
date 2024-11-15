@@ -1,0 +1,125 @@
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.consultar_cfdi_fecha = exports.Consultar_timbres2 = exports.Consultar_timbres = exports.Consultar_serie_folio_rfc_emisor = exports.Consultar_credenciales_usuario_rv = exports.Consultar_cfdi_timbrado_rfc_emisor = exports.Consultar_cfdi_timbrado_rango_fecha = exports.Consultar_cfdi_timbrado_especifico = exports.Consultar_cfdi_timbrado_UUID = exports.Consultar_cfdi_UUID = exports.Consultar_Acuse_timbrado_UUID = exports.Consultar_Acuse_cancelado_UUID = exports.TimbradoRetencionRV = exports.TimbradoRetencionLFE = exports.TimbradoRV = exports.TimbradoLFE = exports.Obtenerdatos = exports.ObtenerReportesCfdi = exports.LRV = exports.GenerarPDFRetencion = exports.GeneraXMLRetencion = exports.GeneraPdfCfdi = exports.GeneraCFDI33 = exports.ConsultarFolios = exports.CancelacionRetencionRV = exports.CancelacionRetencionLFE = exports.CancelaRV = exports.CancelaLFE = exports.TimbrarCDClave = exports.TestCfd33SC = exports.TestCfd33_2 = exports.TestCfd33 = exports.GetTicketSC = exports.GetTicketCSF = exports.GetTicketAU = exports.GetTicket = exports.GenerarPdf33Interno = exports.GenerarPdf33 = exports.EstatusCFDI = exports.CrearXMLSolicitudCancelacion = exports.ConsultarSolicitudesPendientesDeCancelacion = exports.CancelTicketSC = exports.CancelTicketExt = exports.CancelTicket = exports.CancelTest = exports.AceptarRechazarSolicitudDeCancelacion = exports.rvltimbradopac = void 0;
+//rvltimbrado
+const AceptarRechazarSolicitudDeCancelacion_1 = __importDefault(require("./rvltimbrado/AceptarRechazarSolicitudDeCancelacion"));
+exports.AceptarRechazarSolicitudDeCancelacion = AceptarRechazarSolicitudDeCancelacion_1.default;
+const CancelTest_1 = __importDefault(require("./rvltimbrado/CancelTest"));
+exports.CancelTest = CancelTest_1.default;
+const CancelTicket_1 = __importDefault(require("./rvltimbrado/CancelTicket"));
+exports.CancelTicket = CancelTicket_1.default;
+const CancelTicketExt_1 = __importDefault(require("./rvltimbrado/CancelTicketExt"));
+exports.CancelTicketExt = CancelTicketExt_1.default;
+const CancelTicketSC_1 = __importDefault(require("./rvltimbrado/CancelTicketSC"));
+exports.CancelTicketSC = CancelTicketSC_1.default;
+const ConsultarSolicitudesPendientesDeCancelacion_1 = __importDefault(require("./rvltimbrado/ConsultarSolicitudesPendientesDeCancelacion"));
+exports.ConsultarSolicitudesPendientesDeCancelacion = ConsultarSolicitudesPendientesDeCancelacion_1.default;
+const CrearXMLSolicitudCancelacion_1 = __importDefault(require("./rvltimbrado/CrearXMLSolicitudCancelacion"));
+exports.CrearXMLSolicitudCancelacion = CrearXMLSolicitudCancelacion_1.default;
+const EstatusCFDI_1 = __importDefault(require("./rvltimbrado/EstatusCFDI"));
+exports.EstatusCFDI = EstatusCFDI_1.default;
+const GenerarPdf33_1 = __importDefault(require("./rvltimbrado/GenerarPdf33"));
+exports.GenerarPdf33 = GenerarPdf33_1.default;
+const GenerarPdf33Interno_1 = __importDefault(require("./rvltimbrado/GenerarPdf33Interno"));
+exports.GenerarPdf33Interno = GenerarPdf33Interno_1.default;
+const GetTicket_1 = __importDefault(require("./rvltimbrado/GetTicket"));
+exports.GetTicket = GetTicket_1.default;
+const GetTicketAU_1 = __importDefault(require("./rvltimbrado/GetTicketAU"));
+exports.GetTicketAU = GetTicketAU_1.default;
+const GetTicketCSF_1 = __importDefault(require("./rvltimbrado/GetTicketCSF"));
+exports.GetTicketCSF = GetTicketCSF_1.default;
+const GetTicketSC_1 = __importDefault(require("./rvltimbrado/GetTicketSC"));
+exports.GetTicketSC = GetTicketSC_1.default;
+const TestCfd33_1 = __importDefault(require("./rvltimbrado/TestCfd33"));
+exports.TestCfd33 = TestCfd33_1.default;
+const TestCfd33SC_1 = __importDefault(require("./rvltimbrado/TestCfd33SC"));
+exports.TestCfd33SC = TestCfd33SC_1.default;
+const TestCfd33_2_1 = __importDefault(require("./rvltimbrado/TestCfd33_2"));
+exports.TestCfd33_2 = TestCfd33_2_1.default;
+const TimbrarCDClave_1 = __importDefault(require("./rvltimbrado/TimbrarCDClave"));
+exports.TimbrarCDClave = TimbrarCDClave_1.default;
+//rvltimbradopac
+const CancelaLFE_1 = __importDefault(require("./rlvtimbradopac/CancelaLFE"));
+exports.CancelaLFE = CancelaLFE_1.default;
+const CancelaRV_1 = __importDefault(require("./rlvtimbradopac/CancelaRV"));
+exports.CancelaRV = CancelaRV_1.default;
+const CancelacionRetencionLFE_1 = __importDefault(require("./rlvtimbradopac/CancelacionRetencionLFE"));
+exports.CancelacionRetencionLFE = CancelacionRetencionLFE_1.default;
+const CancelacionRetencionRV_1 = __importDefault(require("./rlvtimbradopac/CancelacionRetencionRV"));
+exports.CancelacionRetencionRV = CancelacionRetencionRV_1.default;
+const ConsultarFolios_1 = __importDefault(require("./rlvtimbradopac/ConsultarFolios"));
+exports.ConsultarFolios = ConsultarFolios_1.default;
+const GeneraCFDI33_1 = __importDefault(require("./rlvtimbradopac/GeneraCFDI33"));
+exports.GeneraCFDI33 = GeneraCFDI33_1.default;
+const GeneraPdfCfdi_1 = __importDefault(require("./rlvtimbradopac/GeneraPdfCfdi"));
+exports.GeneraPdfCfdi = GeneraPdfCfdi_1.default;
+const GeneraXMLRetencion_1 = __importDefault(require("./rlvtimbradopac/GeneraXMLRetencion"));
+exports.GeneraXMLRetencion = GeneraXMLRetencion_1.default;
+const GenerarPDFRetencion_1 = __importDefault(require("./rlvtimbradopac/GenerarPDFRetencion"));
+exports.GenerarPDFRetencion = GenerarPDFRetencion_1.default;
+exports.rvltimbradopac = __importStar(require("./rlvtimbradopac/GenerarPdf33"));
+const LRV_1 = __importDefault(require("./rlvtimbradopac/LRV"));
+exports.LRV = LRV_1.default;
+const ObtenerReportesCfdi_1 = __importDefault(require("./rlvtimbradopac/ObtenerReportesCfdi"));
+exports.ObtenerReportesCfdi = ObtenerReportesCfdi_1.default;
+const Obtenerdatos_1 = __importDefault(require("./rlvtimbradopac/Obtenerdatos"));
+exports.Obtenerdatos = Obtenerdatos_1.default;
+const TimbradoLFE_1 = __importDefault(require("./rlvtimbradopac/TimbradoLFE"));
+exports.TimbradoLFE = TimbradoLFE_1.default;
+const TimbradoRV_1 = __importDefault(require("./rlvtimbradopac/TimbradoRV"));
+exports.TimbradoRV = TimbradoRV_1.default;
+const TimbradoRetencionLFE_1 = __importDefault(require("./rlvtimbradopac/TimbradoRetencionLFE"));
+exports.TimbradoRetencionLFE = TimbradoRetencionLFE_1.default;
+const TimbradoRetencionRV_1 = __importDefault(require("./rlvtimbradopac/TimbradoRetencionRV"));
+exports.TimbradoRetencionRV = TimbradoRetencionRV_1.default;
+//ws_consultas_cfd_real
+const Consultar_Acuse_cancelado_UUID_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_Acuse_cancelado_UUID"));
+exports.Consultar_Acuse_cancelado_UUID = Consultar_Acuse_cancelado_UUID_1.default;
+const Consultar_Acuse_timbrado_UUID_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_Acuse_timbrado_UUID"));
+exports.Consultar_Acuse_timbrado_UUID = Consultar_Acuse_timbrado_UUID_1.default;
+const Consultar_cfdi_UUID_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_cfdi_UUID"));
+exports.Consultar_cfdi_UUID = Consultar_cfdi_UUID_1.default;
+const Consultar_cfdi_timbrado_UUID_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_cfdi_timbrado_UUID"));
+exports.Consultar_cfdi_timbrado_UUID = Consultar_cfdi_timbrado_UUID_1.default;
+const Consultar_cfdi_timbrado_especifico_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_cfdi_timbrado_especifico"));
+exports.Consultar_cfdi_timbrado_especifico = Consultar_cfdi_timbrado_especifico_1.default;
+const Consultar_cfdi_timbrado_rango_fecha_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_cfdi_timbrado_rango_fecha"));
+exports.Consultar_cfdi_timbrado_rango_fecha = Consultar_cfdi_timbrado_rango_fecha_1.default;
+const Consultar_cfdi_timbrado_rfc_emisor_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_cfdi_timbrado_rfc_emisor"));
+exports.Consultar_cfdi_timbrado_rfc_emisor = Consultar_cfdi_timbrado_rfc_emisor_1.default;
+const Consultar_credenciales_usuario_rv_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_credenciales_usuario_rv"));
+exports.Consultar_credenciales_usuario_rv = Consultar_credenciales_usuario_rv_1.default;
+const Consultar_serie_folio_rfc_emisor_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_serie_folio_rfc_emisor"));
+exports.Consultar_serie_folio_rfc_emisor = Consultar_serie_folio_rfc_emisor_1.default;
+const Consultar_timbres_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_timbres"));
+exports.Consultar_timbres = Consultar_timbres_1.default;
+const Consultar_timbres2_1 = __importDefault(require("./ws_consultas_cfd_real/Consultar_timbres2"));
+exports.Consultar_timbres2 = Consultar_timbres2_1.default;
+const consultar_cfdi_fecha_1 = __importDefault(require("./ws_consultas_cfd_real/consultar_cfdi_fecha"));
+exports.consultar_cfdi_fecha = consultar_cfdi_fecha_1.default;

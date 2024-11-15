@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                    // Versión de JavaScript de salida
+    "moduleResolution": "node",         // Resolución de módulos estilo Node
+    "declaration": true,                // Genera archivos de declaración (.d.ts)
+    "declarationDir": "./dist/types",   // Directorio donde se guardan las declaraciones de tipos
+    "rootDir": "./src",                 // Directorio raíz de entrada
+    "strict": true,                     // Opciones estrictas de TypeScript
+    "esModuleInterop": true,            // Interoperabilidad de módulos ES
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
